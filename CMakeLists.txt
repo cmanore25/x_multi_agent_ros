@@ -124,8 +124,8 @@ endif()
 #################################
 
 find_package( Boost COMPONENTS log thread system filesystem container REQUIRED )
-set(NLopt_DIR /home/viciopoli/InstalledLibs/nlopt/lib/cmake/nlopt)
-set(Ceres_DIR /home/viciopoli/InstalledLibs/Ceres/lib/cmake/Ceres)
+set(NLopt_DIR /usr/local/lib/cmake/nlopt)
+set(Ceres_DIR /usr/local/lib/cmake/Ceres)
 
 find_package(x 1.2.3 REQUIRED)
 if(x_FOUND)

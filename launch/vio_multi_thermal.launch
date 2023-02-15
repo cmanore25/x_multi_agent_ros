@@ -37,7 +37,7 @@
   </group>
 
   <!-- recursively start new node -->
-  <include file="$(find x_vio_ros)/launch/vio_thermal.launch" if="$(eval arg('nr') - 1 > 0)">
+  <include file="$(find x_vio_ros)/launch/vio_multi_thermal.launch" if="$(eval arg('nr') - 1 > 0)">
     <arg name="nr" value="$(eval arg('nr') - 1)"/>
   </include>
 
